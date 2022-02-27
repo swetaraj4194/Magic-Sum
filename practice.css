@@ -1,0 +1,167 @@
+
+body{
+    margin:0 auto;
+    background-image: url("m4.jpeg");
+   
+}
+
+.container{
+    
+    font-family:'Quicksand',sans-serif;
+    margin: 30px;
+    
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 80px 1fr 1fr 1fr 1fr;
+    gap:5px;
+    box-sizing: border-box;
+    
+    
+}
+
+
+.container div{
+    padding: 20px;
+    border:1px solid black;
+    
+    margin-left: 60px;
+    
+    
+}
+
+h2,h3{
+    text-align: center;
+    margin-top: 0;
+}
+
+.head{
+position: fixed;
+top: 0;
+width: 1615px;
+height: 50px;
+grid-column-start: 1;
+grid-column-end: 5;
+grid-row-start: 1;
+grid-row-end: 1;
+background-color:tomato;
+}
+
+
+.rules{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    width:400px;
+    height: 800px;
+background-color:lightgreen}
+    
+
+
+#user{
+grid-column-start: 2;
+grid-column-end: 2;
+grid-row-start: 2;
+grid-row-end: 5;
+width:400px;
+height: 800px;
+text-align: center;
+background-color: cyan;
+
+}
+
+.result{
+grid-column-start: 3;
+grid-column-end: 5;
+grid-row-start: 2;
+grid-row-end: 2;
+
+width: 600px;
+height: 200px;
+text-align: center;
+background-color: yellow;
+
+}
+
+.cal{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+
+    width: 600px;
+    height: 520px;
+    text-align: center;
+    background-color:violet;
+
+}
+@media only screen and (max-width: 1200px){
+    .container div{
+        
+        border:1px solid black;
+        
+        margin: 0;
+    }
+     
+    
+       .head{
+            position: fixed;
+            top: 0;
+            
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            width:650px;
+            }
+
+            .rules{
+                grid-column-start: 1;
+                grid-column-end: 1;
+                grid-row-start: 2;
+                grid-row-end: 2;
+                width: 300px;
+                height: 800px;
+            }
+               
+
+            #user{
+                grid-column-start: 2;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 2;
+                width: 300px;
+                height: 800px;
+               }
+
+            .result{
+                    grid-column-start: 2;
+                    grid-column-end: 2;
+                    grid-row-start: 3;
+                    grid-row-end: 3;
+                    width: 300px;
+                    height: 500px;
+                    
+                   }
+                    
+            .cal{ grid-column-start: 1;
+                        grid-column-end: 1;
+                        grid-row-start: 3;
+                        grid-row-end: 3;
+                        width: 300px;
+                        height: 500px;
+                    }
+    
+
+  }
+ 
+    
+
+  
+
+
+
+
+
+  
